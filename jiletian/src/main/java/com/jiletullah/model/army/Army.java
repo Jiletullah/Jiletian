@@ -1,4 +1,4 @@
-package com.jiletullah.model.town;
+package com.jiletullah.model.army;
 
 import javax.persistence.CascadeType;
 import javax.persistence.Entity;
@@ -13,17 +13,15 @@ import org.hibernate.annotations.GenericGenerator;
 import com.jiletullah.model.player.Player;
 
 @Entity
-public class Town {
-    
+public class Army {
+
     @Id
     @GeneratedValue(generator = "UUID")
     @GenericGenerator(name = "UUID", strategy = "org.hibernate.id.UUIDGenerator")
-    private String townId;
-
+    private String armyId;
 
     @ManyToOne(fetch = FetchType.LAZY, cascade = CascadeType.ALL)
     @JoinColumn(name = "playerId")
     private Player owner;
-
 
 }
