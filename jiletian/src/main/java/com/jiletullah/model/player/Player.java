@@ -16,6 +16,7 @@ import org.hibernate.annotations.GenericGenerator;
 
 import com.jiletullah.gameobject.Resource;
 import com.jiletullah.model.army.Army;
+import com.jiletullah.model.event.Event;
 import com.jiletullah.model.faction.Faction;
 import com.jiletullah.model.town.Town;
 
@@ -37,6 +38,9 @@ public class Player {
 
     @OneToMany(mappedBy = "owner")
     private List<Army> armies;
+
+    @OneToMany(mappedBy = "owner")
+    private List<Event> events;
 
     @Embedded
     private Resource resources;
@@ -357,6 +361,15 @@ public class Player {
         this.numberOfDefeats = numberOfDefeats;
     }
 
+    public List<Event> getEvents() {
+        return events;
+    }
+
+    public void setEvents(List<Event> events) {
+        this.events = events;
+    }
+
+    
     
 
 }
