@@ -1,4 +1,4 @@
-package com.jiletullah.jiletian.model.town;
+package com.jiletullah.jiletian.model;
 
 import java.util.List;
 
@@ -14,8 +14,6 @@ import javax.persistence.ManyToOne;
 import org.hibernate.annotations.GenericGenerator;
 
 import com.jiletullah.jiletian.gameobject.Resource;
-import com.jiletullah.jiletian.model.building.Building;
-import com.jiletullah.jiletian.model.player.Player;
 
 @Entity
 public class Town {

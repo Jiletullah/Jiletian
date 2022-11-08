@@ -1,4 +1,4 @@
-package com.jiletullah.jiletian.model.player;
+package com.jiletullah.jiletian.model;
 
 import java.util.List;
 
@@ -15,11 +15,6 @@ import javax.persistence.OneToMany;
 import org.hibernate.annotations.GenericGenerator;
 
 import com.jiletullah.jiletian.gameobject.Resource;
-import com.jiletullah.jiletian.model.army.Army;
-import com.jiletullah.jiletian.model.event.Event;
-import com.jiletullah.jiletian.model.faction.Faction;
-import com.jiletullah.jiletian.model.town.Town;
-
 
 @Entity
 public class Player {

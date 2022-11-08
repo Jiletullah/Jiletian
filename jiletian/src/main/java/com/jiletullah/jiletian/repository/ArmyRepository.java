@@ -3,7 +3,7 @@ package com.jiletullah.jiletian.repository;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
 
-import com.jiletullah.jiletian.model.army.Army;
+import com.jiletullah.jiletian.model.Army;
 
 @Repository
 public interface ArmyRepository extends JpaRepository<Army,String>{}

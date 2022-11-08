@@ -1,4 +1,4 @@
-package com.jiletullah.jiletian.model.building;
+package com.jiletullah.jiletian.model;
 
 import javax.persistence.Embedded;
 import javax.persistence.EnumType;

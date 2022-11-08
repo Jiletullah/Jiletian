@@ -1,4 +1,4 @@
-package com.jiletullah.jiletian.model.event;
+package com.jiletullah.jiletian.model;
 
 import java.sql.Date;
 
@@ -13,8 +13,6 @@ import javax.persistence.Temporal;
 import javax.persistence.TemporalType;
 
 import org.hibernate.annotations.GenericGenerator;
-
-import com.jiletullah.jiletian.model.player.Player;
 
 @Entity
 public class Event {

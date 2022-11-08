@@ -1,4 +1,4 @@
-package com.jiletullah.jiletian.model.faction;
+package com.jiletullah.jiletian.model;
 
 import java.util.List;
 
@@ -7,8 +7,6 @@ import javax.persistence.GeneratedValue;
 import javax.persistence.Id;
 import javax.persistence.OneToMany;
 import org.hibernate.annotations.GenericGenerator;
-
-import com.jiletullah.jiletian.model.player.Player;
 
 @Entity
 public class Faction {

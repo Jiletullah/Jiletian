@@ -1,4 +1,4 @@
-package com.jiletullah.jiletian.model.army;
+package com.jiletullah.jiletian.model;
 
 import javax.persistence.CascadeType;
 import javax.persistence.Embedded;
@@ -17,7 +17,6 @@ import org.hibernate.annotations.GenericGenerator;
 import com.jiletullah.jiletian.enumeration.ArmyOrderType;
 import com.jiletullah.jiletian.gameobject.Force;
 import com.jiletullah.jiletian.gameobject.Resource;
-import com.jiletullah.jiletian.model.player.Player;
 
 @Entity
 public class Army {
@@ -33,6 +32,7 @@ public class Army {
 
     @OneToOne(fetch = FetchType.LAZY)
     @JoinColumn(name = "townId")
+    private Town belongsTo;
 
     @Embedded
     private Force force;
@@ -214,6 +214,14 @@ public class Army {
 
     public void setIntegrity(int integrity) {
         this.integrity = integrity;
+    }
+
+    public Town getBelongsTo() {
+        return belongsTo;
+    }
+
+    public void setBelongsTo(Town belongsTo) {
+        this.belongsTo = belongsTo;
     }
 
     
